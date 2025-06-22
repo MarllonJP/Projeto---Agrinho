@@ -1,6 +1,6 @@
-# Site acessível sobre Tecnologia de Precisão no campo
+# Site acessível sobre a Conexão Universidade e Campo
 ## Sobre
-Refatoração de um site implementando recursos de acessibilidade no HTML, CSS e JS.
+Elaboração de um site informativo implementando recursos do HTML, CSS e JS.
 ## Recursos de acessibilidade
 - Atributos aria
 - Alt

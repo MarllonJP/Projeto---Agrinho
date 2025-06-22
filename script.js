@@ -34,9 +34,17 @@ document.addEventListener('DOMContentLoaded', function(){
          document.body.classList.toggle('alto-contraste')
      })
  
- 
  })
- 
+
+ const botoes = document.querySelectorAll('.botao');
+
+    botoes.forEach(botao => {
+      botao.addEventListener('click', () => {
+        const texto = botao.nextElementSibling; // div logo após o botão
+        texto.style.display = (texto.style.display === 'block') ? 'none' : 'block';
+      });
+    });
+    
  ScrollReveal().reveal('#inicio', { delay: 500 });
  ScrollReveal().reveal('#tropicalia', { delay: 500 });
  ScrollReveal().reveal('#galeria', { delay: 500 });
