@@ -90,6 +90,9 @@ ESALQ-USP: GUTZ, Ivano. Universidade de São Paulo - Campus de Piracicaba - SP -
 Uso de IA: GitHub Copilot - VS Code
 Utilizado para:
 Ajuste dos botões e textos descritivos das universidades
+Ajuste das imagens das universidades
+Transformação de trechos do site em links
+Destacamento do link e resposta a mudança de contraste
 Correção de códigos
 Correção de erros gramaticais
 Eliminação de códigos e classes avulsos
