@@ -6,10 +6,9 @@ html {
 }
 
 :root {
-    --laranja-claro: #17770e;
+    --verde-escuro: #17770e;
     --alto-contraste-fundo: #000000;
     --alto-contraste-texto: #25df00;
-    --alto-contraste-link: #eeff00;
 } 
 
 body {
@@ -28,7 +27,7 @@ section {
 
 
 .nav-link {
-    color: #17770e;
+    color: var(--verde-escuro);
     font-weight: 600;
 }
 
@@ -43,16 +42,6 @@ section {
     margin: 0 auto;
 }
 
-
-.img-inicio {
-    position: absolute;
-    right: 0;
-    top: 18rem;
-    width: 45rem;
-    height: auto;
-}
-
-
 .esquerda-conteudo {
     display: flex;
     flex-direction: column;
@@ -60,9 +49,8 @@ section {
     gap: 1rem;
 }
 
-
 .botao-inicio {
-    background-color: var(--laranja-claro);
+    background-color: var(--verde-escuro);
     border-radius: 30px;
     border: none;
     width: 14em;
@@ -72,59 +60,24 @@ section {
 }
 
 .display-4 {
-    text-shadow: -5px 5px var(--laranja-claro);
+    text-shadow: -5px 5px var(--verde-escuro);
 }
-
-
-#tropicalia {
-    position: relative;
-    padding-top: 5rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    background: url() top right no-repeat;
-    background-size: 180px 180px;
-}
-
-#tropicalia .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    margin-bottom: 30px;
-}
-
 
 h2 {
-    font-family: 'Lemon', serif;
+    font-family: 'Cambria', serif;
     font-size: 2.5em;
     font-style: normal;
-    color: var(--laranja-claro);
+    color: var(--verde-escuro);
 }
 
 h3 {
     font-family: 'Lemon', serif;
     font-size: 1.5em;
     font-style: normal;
-    color: var(--laranja-claro);
+    color: var(--verde-escuro);
 }
 
-#instituições { 
-    text-align: center;
-    position: relative;
-    background-color: #FAF4F4;
-
-}
-
-#instituições a {
-    text-decoration: none;
-}
-
-.fundo-galeria {
-    background-size: 180px 180px;
-}
-
-.menu-acessibilidade{;
+.menu-acessibilidade {
     position: fixed;
     top:2rem;
     right:20px;
@@ -150,6 +103,14 @@ h3 {
     display: none;
 }
 
+.text-black {
+    color: #000000 !important;
+}
+
+.alto-contraste .text-black {
+    color: #000000 !important;
+}
+
 .alto-contraste{
     background-color: var(--alto-contraste-fundo);
     color: var(--alto-contraste-texto);
@@ -173,16 +134,8 @@ h3 {
     color: var(--alto-contraste-fundo)
 }
 
-.alto-contraste #tropicalia {
-    background: none;
-}
-
 .alto-contraste #instituiçoes {
     background-color: var(--alto-contraste-fundo);
-}
-
-.alto-contraste .fundo-galeria {
-    background: none;
 }
 
 .alto-contraste .link-destaque {
@@ -217,23 +170,6 @@ h3 {
     background: none;
 }
 
-.universidade {
-      width: 200px;
-      height: 200px;
-      border: 5px solid rgb(0, 0, 0);
-      border-radius: 20px;
-      margin: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      font-family: Arial, sans-serif;
-    }
-
-.universidade:hover {
-  background-color: #0e9e09;
-}
-
 .texto {
       display: none;
       margin-top: 10px;
@@ -244,7 +180,7 @@ h3 {
     }
 
     .botao {
-      background-color: #17770e;
+      background-color: var(--verde-escuro);
       color: white;
       padding: 10px 20px;
       border: none;
@@ -261,4 +197,11 @@ h3 {
 .link-destaque {
   color: blue;
   text-decoration: underline;
+}
+
+.img-universidade {
+    max-width: 100%;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 1rem;
 }
